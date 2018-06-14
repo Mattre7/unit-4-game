@@ -1,0 +1,73 @@
+body {
+    background-image: url(../images/tennis-background.jpg);
+    background-size: 1600px 900px;
+    background-repeat: no-repeat;
+    background-color: lightblue;
+}
+
+h1 {
+    color: greenyellow;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: rgb(250, 250, 170);
+    clear: both;
+}
+
+.fight_section {
+    display: block
+}
+
+.mainbody {
+    margin-left: 30px;
+}
+
+.character_selector {
+    
+}
+
+
+.your_player, .enemy_selector, .fight_section, .defender_section {
+    display: block
+}
+
+.char_box {
+    height: 135px;
+    width: 175px;
+    border-style: solid;
+    border-color:greenyellow;
+    border-width: 2px;
+    background-color: lightyellow;
+    display: table-cell;
+}
+
+.char_img {
+    height: 90px;
+    width: 150px;
+    padding: 0px;
+    text-align: center;
+    clear: both;
+    display: block;
+    margin: auto;
+}
+
+.serve_btn {
+    background-color: yellowgreen;
+    color: white;
+    border-color: greenyellow;
+}
+
+.char_name {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.energy_level {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom:0px;
+}

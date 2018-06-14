@@ -1,9 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-
+        <meta charset= "UTF-8">
+        <link rel="resetsheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
     </head>
     <body>
-        <h1>test</h1>
+        <div class="container-fluid">
+            <div class="row"><h1 class="col-md-12 text-center" id="game-title">Tournament Tennis</h1></div>
+        </div>
+        <div class="container-fluid mainbody">
+            <div class="row character_selector">
+                <div class="char_box" id="fed_box">
+                    <p class="char_name">Roger Federer</p>
+                    <img class="char_img" src="assets/images/fed_box.jpg">
+                    <p class="energy_level" id="fed_health">120</p>
+                </div>
+                <div class="char_box" id="andy_box">
+                    <p class="char_name">Andy Murray</p>
+                    <img class="char_img" src="assets/images/andy_box.jpg">
+                    <p class="energy_level" id="andy_health">100</p>
+                </div>
+                <div class="char_box" id="nole_box">
+                    <p class="char_name">Novak Djokovic</p>
+                    <img class="char_img" src="assets/images/nole_box.jpg">
+                    <p class="energy_level" id="nole_health">150</p>
+                </div>
+                <div class="char_box" id="rafa_box">
+                    <p class="char_name">Rafael Nadal</p>
+                    <img class="char_img" src="assets/images/rafa_box.jpg">
+                    <p class="energy_level" id="rafa_health">180</p>
+                </div>
+            </div>
+            <div class="row your_player">
+                <h2>Your Player</h2>
+            </div>
+            <div class="row enemy_selector">
+                <h2>Remaining Opponents</h2>
+            </div>
+            <div class="row fight_section">
+                <h2>Fight Section</h2>
+                <button class="serve_btn">Serve</button>
+            </div>
+            <div class="row defender_section">
+                <h2>Opponent</h2>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
     </body>
 </html>
