@@ -7,6 +7,7 @@ $(document).ready(function() {
     var enemySelector = $(".enemy_selector")
     var characterSelector = $(".character_selector")
     var fightSection = $(".fight_section")
+    var serveButton = $(".serve_btn")
 
     let characters = {
         fedBox: {
@@ -35,23 +36,38 @@ $(document).ready(function() {
         }
     }
 
-    fedBox.one("click", function () {
+    fedBox.one("click", function (event) {
         yourPlayer.append(fedBox);
-        enemySelector.append(andyBox, noleBox, rafaBox)
+        enemySelector.append(andyBox, noleBox, rafaBox);
         })
     
-    andyBox.one("click", function () {
+    andyBox.one("click", function (event) {
         yourPlayer.append(andyBox);
         enemySelector.append(fedBox, noleBox, rafaBox)
         })
     
-    noleBox.one("click", function () {
+    noleBox.one("click", function (event) {
         yourPlayer.append(noleBox);
         enemySelector.append(andyBox, fedBox, rafaBox)
         })
 
-    rafaBox.one("click", function () {
+    rafaBox.one("click", function (event) {
         yourPlayer.append(rafaBox);
         enemySelector.append(andyBox, fedBox, noleBox)
         })
+
+    serveButton.on("click", function () {
+        
+        })
     });
+
+
+
+
+    //psuedocode:
+    //change/fix initial click function to choose one of the several characters and "set" that one to be the player
+    //set a second click function to choose an enemy and set them to be the opponent
+    //allow this to run again after defeating the first opponent
+    //create a function based around the serve button
+    //function should run object one's health vs the others attack/counterattacks, maybe use "this." to write that function
+    //for the reset section should keep track of player health ie if the player wins or loses the reset button should become visible through the proper css properties
